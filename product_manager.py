@@ -20,3 +20,5 @@ class ProductManager:
         return total
     
     
+  
+    

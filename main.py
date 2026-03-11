@@ -25,5 +25,5 @@ print("\nTotal number of products:", productsInventory.display_total_products())
     # total value stock
 print("Total inventory value:", productsInventory.total_values_products(), "euros")
 
-
+productsInventory.remove_product_by_name("Mouse")
 
