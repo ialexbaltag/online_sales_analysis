@@ -20,6 +20,7 @@ class ProductManager:
         return total
 
 
+
     def remove_product_by_name(self, name):
         for product in self.product_list:
             if product.name.lower() == name.lower():
@@ -27,4 +28,3 @@ class ProductManager:
                 print(f"Product '{name}' removed from inventory.")
                 return
         print(f"Product '{name}' not found!")
-    
