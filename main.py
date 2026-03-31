@@ -1,3 +1,5 @@
+import random
+from cart import Cart
 from product import Product
 from product_manager import ProductManager
 
@@ -24,6 +26,27 @@ print("\nTotal number of products:", productsInventory.display_total_products())
 
 #     # total value stock
 # print("Total inventory value:", productsInventory.total_values_products(), "euros")
+
+
+
+
+# creare instanta cart
+cart = Cart()
+
+
+# alegere produse
+selected_products = random.sample(ProductManager.product_list, 3)
+
+
+# adaugare in cos
+for product in selected_products:
+    cart.add_to_cart(product)
+
+# afisare cos si plata totala
+cart.display_cart()
+
+total = cart.calculate_total()
+print(f"\nTotal de plata: {total} lei")
 
 
 
