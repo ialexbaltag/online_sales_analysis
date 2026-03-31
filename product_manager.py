@@ -26,5 +26,5 @@ class ProductManager:
                 self.product_list.remove(product)
                 print(f"Product '{name}' removed from inventory.")
                 return
-        print(f"Product '{name}' not found.")
+        print(f"Product '{name}' not found!")
     
